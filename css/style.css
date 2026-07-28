@@ -1019,6 +1019,16 @@ a {
 }
 
 /* Amenities */
+.amenities-note {
+  margin-top: 18px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.amenities-note strong {
+  color: var(--green);
+}
+
 .amenities-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
