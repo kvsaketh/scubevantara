@@ -172,6 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
         openModal();
       } finally {
+        // Fire Meta Pixel Lead event (no-op if pixel didn't load / ad-blocked)
+        if (window.fbq) fbq('track', 'Lead', { content_name: data.source });
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
       }
