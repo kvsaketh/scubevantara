@@ -1608,8 +1608,18 @@ a {
 }
 
 /* Legal page (privacy policy) */
+/* Static header sized to fully contain the overflowing logo on the green bar */
+.legal-header {
+  position: static;
+  padding-top: 0;
+}
+
+.legal-header .header-inner {
+  height: 160px;
+}
+
 .legal-section {
-  padding-top: 160px;
+  padding-top: 48px;
 }
 
 .legal {
